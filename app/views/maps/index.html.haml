@@ -1,2 +1,6 @@
 %h1 Maps#index
 %p Find me in app/views/maps/index.html.haml
+
+%ol
+  - @response.each do |r|
+    %li= r["firstname"]

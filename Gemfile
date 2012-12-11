@@ -20,6 +20,8 @@ group :assets do
   gem "chosen-rails"
 end
 
+gem "rabl"
+
 group :test, :development do
   gem 'rspec-rails'
 end

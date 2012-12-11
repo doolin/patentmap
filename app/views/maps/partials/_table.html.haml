@@ -1,0 +1,18 @@
+%table.table.table-striped
+  %tr
+    %th Unique Inventor ID
+    %th Last Name
+    %th First Name
+    %th Patent
+    %th City
+    %th State
+    %th Country
+  - response.each do |r|
+    %tr
+      %td= r["lower"]
+      %td= r["lastname"]
+      %td= r["firstname"]
+      %td= r["patent"]
+      %td= r["city"]
+      %td= r["state"]
+      %td= r["country"]

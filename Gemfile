@@ -19,3 +19,12 @@ group :assets do
   gem "formtastic-plus-bootstrap"
   gem "chosen-rails"
 end
+
+group :test, :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+end

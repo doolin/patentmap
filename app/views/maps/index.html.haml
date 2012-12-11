@@ -1,6 +1,30 @@
 %h1 Maps#index
 %p Find me in app/views/maps/index.html.haml
 
-%ol
+= form_tag "/", class: "form-inline" do 
+  = text_field_tag "firstname", "", value: params[:firstname], placeholder: "First name"
+  = text_field_tag "lastname", "", value: params[:lastname], placeholder: "Last name"
+  = text_field_tag "key", "API Key", value: params[:key], placeholder: "API key"
+  = submit_tag "Search", class: "btn btn-success"
+
+#map_container
+
+%table.table.table-striped
+  %tr
+    %th Unique Inventor ID
+    %th Last Name
+    %th First Name
+    %th Patent
+    %th City
+    %th State
+    %th Country
   - @response.each do |r|
-    %li= r["firstname"]
+    %tr
+      %td= r["lower"]
+      %td= r["lastname"]
+      %td= r["firstname"]
+      %td= r["patent"]
+      %td= r["city"]
+      %td= r["state"]
+      %td= r["country"]
+      

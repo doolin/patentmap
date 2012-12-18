@@ -5,8 +5,7 @@
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
     = favicon_link_tag '/funginstitute.ico'
-  %body
-
+  %body{ template_id, template_class }
     .container
       .row
         .span12

@@ -5,6 +5,9 @@ gem 'jquery-rails'
 gem 'httparty'
 gem 'haml-rails'
 gem 'pg'
+gem "rabl"
+gem 'kramdown'
+gem 'haml-kramdown'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -19,7 +22,6 @@ group :assets do
   gem "chosen-rails"
 end
 
-gem "rabl"
 
 group :test, :development do
   gem 'sqlite3'

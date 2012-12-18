@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PageController do
+describe PagesController do
 
   describe "GET 'contact'" do
     it "returns http success" do

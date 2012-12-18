@@ -1,0 +1,11 @@
+%header.navbar.navbar-fixed-top
+  %nav.navbar-inner
+    .container
+      .row
+        .span12
+          =link_to "Patent Locator home", root_path, :class => "brand"
+          .cf
+          .nav.pull-right
+            %ul.nav
+              %li=link_to "Help", '/help'
+              %li#sign_up_link=link_to "Request an API Key", 'http://patentserver.herokuapp.com/'

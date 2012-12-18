@@ -1,15 +1,18 @@
 !!!
 %html
   %head
+    %meta{ :charset => 'utf-8' }
     %title Patentmap
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag "application", :media => "all"
     = csrf_meta_tags
     = favicon_link_tag '/funginstitute.ico'
   %body{ template_id, template_class }
+    = render 'layouts/header'
     .container
       .row
         .span12
-          = yield
+          .content
+            = yield
 
-    = render 'maps/partials/footer'
-    = javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "application"      
+    = render 'layouts/footer'
+    = javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "application"

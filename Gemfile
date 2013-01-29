@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'httparty'
 gem 'haml-rails'
@@ -25,7 +25,7 @@ end
 
 group :test, :development do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~>2.12.2'
 end
 
 group :test do

@@ -22,6 +22,7 @@ footer h4 {
 .content {
   background: white;
   padding: 1em;
+  margin-bottom: 170px;
   @include box-sizing(border-box);
   @include border-radius(3px);
   @include box-shadow(0 2px 5px #AAA);

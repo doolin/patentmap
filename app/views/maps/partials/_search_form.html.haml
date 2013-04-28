@@ -1,5 +1,5 @@
 .well
-  = form_tag "/maps", method: "get", class: "form-inline bottom_0" do 
+  = form_tag "/maps", method: "get", class: "form-inline bottom_0" do
     = text_field_tag "firstname", "", value: params[:firstname], placeholder: "First name", class: "span3 bottom_0"
     = text_field_tag "lastname", "", value: params[:lastname], placeholder: "Last name", class: "span3 bottom_0"
     = text_field_tag "key", "API Key", value: params[:key], placeholder: "API key", class: "span2 bottom_0"

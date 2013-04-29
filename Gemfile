@@ -7,7 +7,7 @@ gem 'haml-rails'
 gem 'pg'
 gem "rabl"
 gem 'kramdown'
-gem 'haml-kramdown', :github => 'doolin/haml-kramdown'
+gem 'haml-kramdown'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

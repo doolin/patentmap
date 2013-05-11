@@ -8,4 +8,5 @@ Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dool
 maintained](http://stillmaintained.com/stillmaintained/stillmaintained.png)](http://stillmaintained.com/doolin/patentmap)
 [![Dependency
 Status](https://gemnasium.com/doolin/patentmap.png)](https://gemnasium.com/doolin/patentmap)
-
+[![Coverage
+Status](https://coveralls.io/repos/doolin/patentmap/badge.png)](https://coveralls.io/r/doolin/patentmap)
